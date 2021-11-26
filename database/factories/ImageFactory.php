@@ -22,7 +22,7 @@ class ImageFactory extends Factory
     public function definition()
     {
         return [
-            'path'=> $this->faker->imageUrl
+            'path'=> 'https://picsum.photos/seed/' . $this->faker->unique()->uuid . '/1280/720'
         ];
     }
 }

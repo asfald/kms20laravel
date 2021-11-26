@@ -15,7 +15,9 @@
         @foreach($posts as $post)
             <div class="col mb-3">
                 <div class="card h-100">
-    {{--                <img src="..." class="card-img-top" alt="...">--}}
+                    @if($post->image)
+                    <img src="{{$post->image->path}}" class="card-img-top" alt="...">
+                    @endif
                     <div class="card-body">
                         <h5 class="card-title">{{$post->title}}</h5>
                         <p class="card-text">{{$post->snippet}}</p>
