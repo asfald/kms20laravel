@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\DB;
 class PublicController extends Controller
 {
     public function home(){
-        $name = "Kaspar";
+        $name = "Rain";
         $array = ['piim', 'sai', 'leib'];
         return view('home', compact('name', 'array'));
     }
